@@ -12,7 +12,7 @@
 } 
 
 :root[zen-single-toolbar="true"] #nav-bar {
-  margin-bottom: 13px !important; /* Adjust gap between urlbar and extensions */
+  margin-bottom: 8px !important; /* Adjust gap between urlbar and extensions */
 }
 
 /* Pinned extensions */
@@ -37,7 +37,7 @@
   
   /* Pinned Extensions */
   .unified-extensions-item {
-    margin-inline: 1px !important;
+    margin-inline: 2px !important;
     border-bottom: 0px !important;
     padding: 0px !important;
     height: 32px !important;

@@ -32,16 +32,6 @@
     },
     {
         "type": "checkbox",
-        "label": "Enable Background for Folders (NOTE: Works only till three nested-folders)",
-        "property": "arc-folder-border"
-    },
-    {
-        "type": "checkbox",
-        "label": "Enable Vertical Line for Tabs in Folders",
-        "property": "arc-folder-vertical-line"
-    },
-    {
-        "type": "checkbox",
         "label": "Enable Tab Groups",
         "property": "browser.tabs.groups.enabled"
 
@@ -116,25 +106,14 @@
         ]
     },
     {
-        "type":"dropdown",
-        "value":"number",
-        "property":"arc-marginless-mod",
-        "label": "Marginless browser",
-        "default": 0,
-        "options":[
-            {
-                "label": "None",
-                "value": 0
-            },
-            {
-                "label": "Only for compact mode.",
-                "value": 1
-            },
-            {
-                "label": "Both non-compact and compact mode",
-                "value": 2
-            }
-        ]
+        "type": "checkbox",
+        "property": "arc-nogaps-compact-mod",
+        "label": "Marginless only for compact mode."
+    },
+    {
+        "type": "checkbox",
+        "property": "arc-nogaps-mod",
+        "label": "Marginless for all modes."
     },
     {
         "type": "checkbox",
@@ -144,7 +123,7 @@
     {
         "type": "checkbox",
         "property": "arc-pinned-extensions-mod",
-        "label": "Enable Pinned Extensions to look like Arc on sidebar (Disable if you have no pinned extensions)."
+        "label": "Enable Pinned Extensions to look like Arc on sidebar (Disable is you have no pinned extensions)."
     },
     {
         "type": "checkbox",
@@ -155,7 +134,7 @@
         "type": "dropdown",
         "value": "number",
         "property": "arc.tab-groups-disable",
-        "label": "Arc Tab Groups",
+        "label": "Arc Tab Folders (Disable this for applying Advanced Tab Groups mod).",
         "default": 0,
         "options": [
             {
@@ -173,18 +152,13 @@
     },
     {
         "type": "checkbox",
-        "property": "arc-menu-animations",
-        "label": "Disable Menu Animations (Do it for using Context Menu Icon Mod)."
-    },
-    {
-        "type": "checkbox",
         "property": "arc-remove-workspace-indicator",
         "label": "Remove the workspace indicator."
     },
     {
         "type": "checkbox",
         "property": "arc-urlbar-fade-in",
-        "label": "Remove fade-in which is below the urlbar.",
+        "label": "Remove fade-in which is below the urlbar",
         "default": false
     },
     {
@@ -202,7 +176,7 @@
         "type": "dropdown",
         "value": "number",
         "property": "arcline.url.bar",
-        "label": "Enables Arcline-like URL Bar.",
+        "label": "[EXPERIMENTAL] Enables Arcline-like URL Bar.",
         "default": 0,
         "options": [
             {
@@ -257,13 +231,6 @@
                 "value": 2
             }
         ]
-    },
-    {
-        "type": "string",
-        "label": "Blur for compact mode sidebar (e.g., 30px, 10px, etc.)",
-        "property": "arc.compact.sidebar-blur",
-        "defaultValue":"30px",
-        "placeholder":"30px"
     },
     {
         "type": "checkbox",
@@ -346,16 +313,6 @@
         ]
     }
 ]
-
-
-
-
-
-
-
-
-
-
 
 
 

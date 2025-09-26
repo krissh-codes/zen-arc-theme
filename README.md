@@ -20,7 +20,7 @@ Arc 2.0 Browser is a skin made for Zen Browser that adds lots of polish to the d
 
 Arc 2.0 is NOT a standalone browser. I don't even intend on making one.
 
-Arc 2.0 has been tested on 1.15.5b on Windows. Also, this theme is preferred to be used with **Dark mode** works perfectly with **Single Toolbar Mode**. Might encounter minor hiccups with other modes...
+Arc 2.0 has been tested on 1.14.11b on Windows. Also, this theme works perfectly with **Single Toolbar Mode**. Might encounter minor hiccups with other modes...
 
 ### Features are listed below!
 ### ℹ️ Note
@@ -240,4 +240,4 @@ Click on ```Add new rule``` and type ```zen```. Under ```Style```, set backgroun
 You are totally free to make forks of this or put this in your chrome file and create or modify it according to yourself. It's suggested to credit me if you use my theme. Thank you for using Arc 2.0.
 
 ## Please note that!
-Ping `Equinox`, `perplectly fine` and `CompTechGuy` on Discord for support with issues.
+Ping `Equinox` and `perplectly fine` on Discord for support with issues.
