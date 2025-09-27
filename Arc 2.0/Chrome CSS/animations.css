@@ -566,6 +566,7 @@ menupopup *, menuitem *,
       #historySwipeAnimationPreviousArrow:not([style="translate: none;"])
     )
     browser {
+    border-radius: 24px;
     scale: 0.95 !important;
     transform: translateX(3%) !important;
   }
@@ -575,6 +576,7 @@ menupopup *, menuitem *,
       #historySwipeAnimationNextArrow:not([style="translate: none;"])
     )
     browser {
+    border-radius: 24px;
     scale: 0.95 !important;
     transform: translateX(-3%) !important;
   
