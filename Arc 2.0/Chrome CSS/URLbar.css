@@ -12,7 +12,6 @@
 /* Center text in URL bar */
 #urlbar .urlbar-input,
 .urlbar-input-container {
-    text-align: center !important;
     position: relative;
 }
 
