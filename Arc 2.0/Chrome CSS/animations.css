@@ -707,8 +707,8 @@ menuitem {
     border-radius: 1.5em !important;
   }
 }
-  
- /*Media Player*/
+
+ /*Media Player
 @-moz-document url-prefix("chrome:") {
  
   @media (-moz-pref("arc.media-controls-toolbar-bottom")){
@@ -722,7 +722,7 @@ menuitem {
   }
 
 
-  /* Media player expanded layout */
+  /* Media player expanded layout
   #zen-media-controls-toolbar {
     & .show-on-hover {
       max-height: unset !important;
@@ -734,8 +734,8 @@ menuitem {
         padding 0.2s ease;
     }
   }
-  
-  /* Media buttons hover effect */
+
+  /* Media buttons hover effect
   #zen-media-buttons-hbox > toolbarbutton {
     opacity: 0 !important;
     transition: opacity 0.4s ease-in-out !important;
@@ -744,8 +744,8 @@ menuitem {
     }
   }
 }
-  
-  /* Media controls hover expansion */
+
+  /* Media controls hover expansion
   #zen-media-controls-toolbar {
     #zen-media-controls-hbox {
       order: 0 !important;
@@ -765,7 +765,7 @@ menuitem {
     order: 1 !important;
   }
 
-/* Media controls glow effect */
+/* Media controls glow effect
 #zen-media-controls-toolbar::after {
   position: absolute;
   content: "";
@@ -805,7 +805,7 @@ menuitem {
   background-size: 200% 200%;
 }
 
-/* Playing media styling */
+/* Playing media styling
 #zen-media-controls-toolbar.playing {
   toolbaritem {
     background-color: light-dark(#fffd, #000d) !important;
@@ -825,6 +825,7 @@ menuitem {
     height: 150%;
   }
 }
+*/
 
 /* Glow animation keyframes */
 @keyframes animateGlow {
