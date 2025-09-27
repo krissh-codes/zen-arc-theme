@@ -111,7 +111,7 @@
     --arc-font: "SF-Pro";
   }
 }
-* {
+*:not(browser[primary="true"]):not(.devtools-monospace *):not(.properties-view *) {
   font-family: var(--arc-font), sans-serif; 
 }
 
