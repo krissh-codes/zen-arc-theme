@@ -8,7 +8,7 @@
 #urlbar #userContext-icons {
   display: none !important;
 }
-  
+
 /* Center text in URL bar */
 #urlbar .urlbar-input,
 .urlbar-input-container {
@@ -86,7 +86,7 @@
   margin-bottom: -4px; /* pulls the content below up by 4px */
 }
 
-/* URL bar background - default state 
+/* URL bar background - default state
 #urlbar-background {
     background: var(--nebula-color) !important;
     box-shadow: 0 0px 3px light-dark(rgba(69, 69, 69, 0), rgba(0, 0, 0, 0)) !important;
@@ -108,7 +108,7 @@
 
 /* Selected row highlight & favicon fix */
 .urlbarView-row[selected] {
-    background-color: rgba(100, 100, 100, 0.1) !important;
+    //background-color: rgba(100, 100, 100, 0.1) !important;
 }
 
 .urlbarView-row-inner[selected] .urlbarView-favicon {
@@ -175,7 +175,7 @@
         filter 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.35),
         opacity 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.35),
         scale 0.25s cubic-bezier(0.175, 0.885, 0.32, 1) !important;
-} 
+}
 
 @media (-moz-pref("arcline.url.bar", 1))  {
 
@@ -319,14 +319,14 @@ browser, .browserSidebarContainer.deck-selected {
 #urlbar-results .urlbarView-row {
     /* Remove default background hihlight */
 
-   
+
 }
 
 /* Neutralize hover state */
 #urlbar-results .urlbarView-row:hover {
     /* Completely remove white/default highlight */
     background-color: rgba(0, 0, 0, 0) !important;
- 
+
     /* Optional: Add a subtle hover effect if desired */
     border-radius: 8px;
     transition: background 0.55s ease;
@@ -334,47 +334,47 @@ browser, .browserSidebarContainer.deck-selected {
 
 /* Ensure text remains visible */
 #urlbar-results .urlbarView-row-inner {
-   
+
     background-color: transparent !important;
 }
 
-  
-  
+
+
 
 /* macOS Dock-like Magnification for URL Bar Search Results */
 
 #urlbar-results .urlbarView-row {
     /* Base transition for smooth dock-like effect */
   margin: 0px !important;
-   
+
     transition: all 0.44s cubic-bezier(0.25, 0.1, 0.25, 1) !important;
     transform-origin: center bottom !important;
     border: none !important;
     /* Initial glass morphism styling */
-  
+
     backdrop-filter: blur(2px) !important;
     border-radius: 10px !important;
-   
+
 }
 
 }
 @media (-moz-pref("arcline.url.bar.scale", 1))  {
 
-  
+
    /* Remove White Highlight on Hovered Search Results */
 
 /* Target the urlbar view rows */
 #urlbar-results .urlbarView-row {
     /* Remove default background hihlight */
 
-   
+
 }
 
 /* Neutralize hover state */
 #urlbar-results .urlbarView-row:hover {
     /* Completely remove white/default highlight */
     background-color: rgba(0, 0, 0, 0) !important;
- 
+
     /* Optional: Add a subtle hover effect if desired */
     border-radius: 8px;
     transition: background 0.55s ease;
@@ -382,56 +382,56 @@ browser, .browserSidebarContainer.deck-selected {
 
 /* Ensure text remains visible */
 #urlbar-results .urlbarView-row-inner {
-   
+
     background-color: transparent !important;
 }
 
-  
-  
+
+
 
 /* macOS Dock-like Magnification for URL Bar Search Results */
 
 #urlbar-results .urlbarView-row {
     /* Base transition for smooth dock-like effect */
   margin: 0px !important;
-   
+
     transition: all 0.44s cubic-bezier(0.25, 0.1, 0.25, 1) !important;
     transform-origin: center bottom !important;
     border: none !important;
     /* Initial glass morphism styling */
-  
+
     backdrop-filter: blur(2px) !important;
     border-radius: 10px !important;
-   
+
 }
 
 /* macOS Dock-like Magnification Effect */
 #urlbar-results .urlbarView-row:hover {
-     transition: 
+     transition:
         property-name delay-duration transition-duration transition-timing-function;
-    
+
     /* Example */
     transition: transform 0.4s 0.4s ease-in-out;
     /* 0.2s delay, then 0.3s transition */
     /* Advanced magnification with dock-like curve */
-    transform: 
-        scale(1.12) 
+    transform:
+        scale(1.12)
         translateY(-11.5px) !important; /* Lift effect */
-   
+
     /* Enhanced z-index for proper layering */
     z-index: 100 !important;
     transform-origin: center !important;
     /* Advanced glass effect on hover */
  border: none  !important;
- 
+
     backdrop-filter: blur(25px)  contrast(95%) saturate(115%) !important;
-    box-shadow: 
-        0 10px 20px rgba(0, 0, 0, 0.1), 
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.1),
         0 6px 10px rgba(0, 0, 0, 0.08) !important;
-    
+
     /* Width expansion */
     width: 98.97% !important;
-    
+
 }
 
 
@@ -476,7 +476,7 @@ browser, .browserSidebarContainer.deck-selected {
   &[open] {
     min-width: var(--na-urlbar-width) !important;
     max-width: var(--na-urlbar-width) !important;
-   
+
     display: flex !important;
     scale: 1 !important;
     flex-direction: column !important;
@@ -491,24 +491,24 @@ browser, .browserSidebarContainer.deck-selected {
 }
 
 #urlbar[open][zen-floating-urlbar='true'] {
- 
+
   left: 50% !important;
   max-width: 650px !important;
   border-radius: 25px !important;
-  
-  
+
+
 }
 
 
 /*------------for arc raycast lie toolbar url bar button idea-----------------*/
  #page-action-buttons,
 #urlbar-go-button{
-  
+
   order: 1 !important;
 }
 /*----------------------------------------------------------------------------*/
 
-  
+
 
   /* Make borders more visible */
 
@@ -523,19 +523,19 @@ browser, .browserSidebarContainer.deck-selected {
 .urlbarView-row {
   &[selected] {
     background-color: black !important;
-  
+
     padding-left: 5px !important;
   scale: 0.99 !important;
    filter: brightness(110.1%) !important;
-    
-    
+
+
   }
 }
 
  .verifiedDomain {
         image {
 /*           list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/arc-logo.svg") !important; */
-    
+
         }
       }
 
@@ -566,10 +566,10 @@ browser, .browserSidebarContainer.deck-selected {
     .urlbar-input-box {
       margin: 0px !important;
       padding: 0px !important;
-    
-      
+
+
     }
-   
+
          #urlbar-input {
           margin-top: 2px !important;
         font-size: 17px !important;
@@ -578,13 +578,13 @@ browser, .browserSidebarContainer.deck-selected {
         border-radius: 0 !important;
 
       }
-   
 
-    
+
+
     .urlbar-input-container {
       max-height: fit-content  !important;
       filter: brightness(95%) !important;
-     
+
     bottom: 0px !important;
      width: 97% !important;
      border-radius: 12px !important;
@@ -592,25 +592,25 @@ browser, .browserSidebarContainer.deck-selected {
       padding-block: 3px !important;
       padding-inline: 0px !important;
        box-shadow: 0px 0px 92px -10px rgba(0, 0, 0, 0.6) !important;
-      
+
     }
-  
+
   .verifiedDomain {
   scale: 1.3 !important;
     margin-bottom: 3px !important;
     margin-left: 5px !important;
         image {
 /*           list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/arc-logo.svg") !important; */
-    
+
         }
       }
 
       &:not([zen-newtab]) {
         #identity-box {
-       
-        
+
+
           &:is([pageproxystate="invalid"]).verifiedDomain {
-           
+
             image {
               list-style-image: url('chrome://global/skin/icons/search-glass.svg') !important;
             }
@@ -619,43 +619,43 @@ browser, .browserSidebarContainer.deck-selected {
     margin-left: 5px !important;
           }
         }
-  
-  
-   
-  
-  
-  
-  
+
+
+
+
+
+
+
     }}
-  
+
  #urlbar-background {
         background: rgba(105, 100, 110, 0.000000000000000000000000023) !important; /* Transparency fine-tuned */
-     
+
     box-shadow: 8px 5px 125px 0 rgba(0, 0, 0, 0.5), 0px  30px 50px #00000069 !important;
     backdrop-filter: blur(5rem) saturate(190%) contrast(95%) brightness(69%) !important;
-        
-   
+
+
 	padding: 0.5em 0em !important;
 			border-radius: 18px !important;
-   
-        
-   
+
+
+
         transition: backdrop-filter 0.5s ease, background 0.5s ease;
         border: 0px solid light-dark(rgba(255, 255, 255, 0.9), rgba(235, 235, 235, 0.25)) !important;
-       
+
       }
 
 
 
- 
-  
+
+
 }
 
 @media (-moz-pref: "zen.view.use-single-toolbar") {
   :root[zen-sidebar-expanded="true"] {
     .urlbar-page-action,
     #tracking-protection-icon-container {
-      
+
       margin-left: 0px !important;
     }
   }
@@ -686,7 +686,7 @@ browser, .browserSidebarContainer.deck-selected {
 }
 
 .urlbarView-row[selected] {
-    
+
       background-color: var(--na-color-text) !important;
     }
 
@@ -702,7 +702,7 @@ browser, .browserSidebarContainer.deck-selected {
 
 
 
-  
+
 /*-----------------------------------------------------------*/
 
 
@@ -714,12 +714,12 @@ browser, .browserSidebarContainer.deck-selected {
     --urlbarView-item-inline-padding: 4px !important;
   }
 
- 
+
   #urlbar {
     .urlbarView {
       overflow: initial !important;}}
 
-      
+
 
       .urlbarView-row[has-action][type="clipboard"] {
         .urlbarView-title-separator::before {
@@ -740,7 +740,7 @@ browser, .browserSidebarContainer.deck-selected {
       }
     }
 
-   
+
 
       &[zen-newtab] {
            scale: 1.5 !important;
@@ -751,8 +751,8 @@ browser, .browserSidebarContainer.deck-selected {
         }
       }
 
-   
- 
+
+
 
 
   /* Border tweaks */
@@ -843,7 +843,7 @@ browser, .browserSidebarContainer.deck-selected {
 
 
   #urlbar {
-   
+
 
     &[breakout-extend] {
       @media not -moz-pref("natsumi.urlbar.light") {
@@ -961,11 +961,11 @@ browser, .browserSidebarContainer.deck-selected {
         }
       }
 
-     
 
-     
 
-     
+
+
+
 
 
       /* Force icon size */
@@ -989,7 +989,7 @@ browser, .browserSidebarContainer.deck-selected {
       */
     }
 
- 
+
 
 }
 
