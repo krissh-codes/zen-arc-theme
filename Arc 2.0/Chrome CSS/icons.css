@@ -115,6 +115,11 @@
   font-family: var(--arc-font), sans-serif;
 }
 
+.devtools-togglebutton {
+  font-family: inherit;
+  text-transform: uppercase;
+}
+
 #inspector-breadcrumbs *, .eager-evaluation-result__text *, .properties-view *, .stack-trace * {
   font-family: var(--monospace-font-family), Menlo, monospace !important;
 }
