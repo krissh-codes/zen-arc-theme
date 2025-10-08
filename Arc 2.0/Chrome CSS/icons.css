@@ -111,7 +111,7 @@
     --arc-font: "SF-Pro";
   }
 }
-*:not(browser[primary="true"]):not(.devtools-monospace *):not(.properties-view *):not(.CodeMirror *):not(.eager-evaluation-result__text *):not(input):not(#inspector-breadcrumbs *) {
+*:not(browser[primary="true"]):not(.devtools-monospace *):not(.properties-view *):not(.CodeMirror *):not(.eager-evaluation-result__text *):not(input):not(#inspector-breadcrumbs *):not(#preferences-root *) {
   font-family: var(--arc-font), sans-serif;
 }
 
