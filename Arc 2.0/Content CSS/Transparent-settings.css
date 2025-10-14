@@ -19,6 +19,39 @@
         groupbox::before {
             display: none !important;
         }
+
+        .navigation {
+            background: rgba(0, 0, 0, .1) !important ;
+        }
+
+        #searchInput {
+            width: 100% !important;
+        }
+
+        .category[selected="true"], .category[selected] {
+            background: var(--zen-colors-border-contrast) !important
+        }
+    }
+
+    #full {
+        .category[selected="true"], .category[selected] {
+            background-color: var(--zen-colors-border-contrast) !important;
+            border-radius: var(--border-radius-medium) !important;
+        }
+
+        addon-page-header {
+            .sticky-container, .sticky-container > div {
+                background: none !important;
+            }
+        }
+
+        #main {
+            .card {
+                background: var(--zen-colors-border-contrast) !important;
+                box-shadow: none !important;
+                border: none !important;
+            }
+        }
     }
 
     :root {
