@@ -103,7 +103,7 @@
 }
 @media (-moz-pref("arc-font", "SF-Symbols")) {
   :root{
-    --arc-font: "Google Sans 18pt";
+    --arc-font: "Metropolis", "Google Sans 18pt";
   }
 }
 @media (-moz-pref("arc-font", "SF-Pro")) {
