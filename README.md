@@ -20,7 +20,7 @@ Arc 2.0 Browser is a skin made for Zen Browser that adds lots of polish to the d
 
 Arc 2.0 is NOT a standalone browser. I don't even intend on making one.
 
-Arc 2.0 has been tested on 1.15.5b on Windows. Also, this theme is preferred to be used with **Dark mode** works perfectly with **Single Toolbar Mode**. Might encounter minor hiccups with other modes...
+Arc 2.0 has been tested on 1.16.1b on Windows. Also, this theme is preferred to be used with **Dark mode** works perfectly with **Single Toolbar Mode**. Might encounter minor hiccups with other modes...
 
 ### Features are listed below!
 ### ℹ️ Note
@@ -29,8 +29,8 @@ Arc 2.0 has been tested on 1.15.5b on Windows. Also, this theme is preferred to 
 > made, chances are I'll keep it if I still like it. So please be respectful and refrain from attacking people when you
 > make suggestions. Thanks!
 
-## Install using ![Sine](https://github.com/CosmoCreeper/Sine) **[RECOMMENDED]**
-* Install **Sine**, a JS-based better mod and theme manager, using this link - [Sine v2](https://github.com/CosmoCreeper/Sine/releases/tag/v2.0). **For more information about Sine, click ![here](https://github.com/CosmoCreeper/Sine).** <br>
+## Install using [Sine](https://github.com/CosmoCreeper/Sine) **[RECOMMENDED]**
+* Install **Sine**, a JS-based better mod and theme manager, using this link - [Sine v2](https://github.com/CosmoCreeper/Sine/releases/tag/v2.0). **For more information about Sine, click [here](https://github.com/CosmoCreeper/Sine).** <br>
   **(NOTE: This installs Sine, which has tested, stable builds. For testing newly introduced features, switch to Cosine as shown below.)**
   ![image](https://github.com/user-attachments/assets/0d7255b4-0ae0-43e9-8989-7d7016936e83)
 

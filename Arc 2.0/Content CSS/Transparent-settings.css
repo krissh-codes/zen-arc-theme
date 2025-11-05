@@ -1,97 +1,141 @@
-@-moz-document regexp("^(?!chrome:).*") {
-    @-moz-document domain(monkeytype.com) {
-        body {
-            background-color: rgba(15, 15, 20, 0.4) !important; /* Darker base color */
+
+/*---------------------------------transparent zen windows lie setting about config etc--------------------------------------*/
+:root{
+  --zen-colors-tertiary: transparent !important;
+  --zen-settings-secondary-background: transparent !important;
+}
+
+#preferences-root{
+  background-color: transparent !important;
+
+    groupbox::before {
+        display: none !important;
+    }
+
+    .navigation {
+        background: rgba(0, 0, 0, .1) !important ;
+    }
+
+    #searchInput {
+        width: 100% !important;
+    }
+
+    .category[selected="true"], .category[selected] {
+        background: var(--zen-colors-border-contrast) !important
+    }
+}
+
+#full {
+    .category[selected="true"], .category[selected] {
+        background-color: var(--zen-colors-border-contrast) !important;
+        border-radius: var(--border-radius-medium) !important;
+    }
+
+    addon-page-header {
+        .sticky-container, .sticky-container > div {
+            background: none !important;
         }
     }
 
-    #preferences-body {
-        font-family: sans-serif !important;
-
-        groupbox:not(#sineInstallationGroup:popover-open) {
-            /*   background: var(--zen-colors-tertiary) !important; */
+    #main {
+        .card {
             background: var(--zen-colors-border-contrast) !important;
-            border-radius: 12px !important;
-            margin: 12px 0 !important;
-            border: none;
-        }
-
-        groupbox::before {
-            display: none !important;
-        }
-
-        .navigation {
-            background: rgba(0, 0, 0, .1) !important ;
-        }
-
-        #searchInput {
-            width: 100% !important;
-        }
-
-        .category[selected="true"], .category[selected] {
-            background: var(--zen-colors-border-contrast) !important
+            box-shadow: none !important;
+            border: none !important;
         }
     }
+}
 
-    #full {
-        .category[selected="true"], .category[selected] {
-            background-color: var(--zen-colors-border-contrast) !important;
-            border-radius: var(--border-radius-medium) !important;
-        }
+/* Removes the white or dark layer on top */
+browser{
+  background-color: transparent !important;
+}
 
-        addon-page-header {
-            .sticky-container, .sticky-container > div {
-                background: none !important;
-            }
-        }
+.sticky-container{
+  width: calc(var(--page-main-content-width) + var(--main-margin-start) + var(--main-margin-start)) !important;
+  border-radius: 0 0 1em 1em !important;
+}
 
-        #main {
-            .card {
-                background: var(--zen-colors-border-contrast) !important;
-                box-shadow: none !important;
-                border: none !important;
-            }
-        }
-    }
+html:has([data-l10n-id]){
+  background-color: transparent !important;
+}
 
-    :root {
-        --zen-colors-tertiary: transparent !important;
-        --zen-settings-secondary-background: transparent !important;
-    }
+.KEYJUMP_hint{
+  border-radius: 100px !important;
+  background-color: #49FCBB !important;
+  color: #000 !important;
+  font-family: 'Product Sans', Sans !important;
+  font-weight: bold !important;
+  box-shadow: #0008 0 0 10px !important;
+  border: #0008 1px solid !important;
+  transition: all 0.3s ease-in-out !important;
+}
 
-    @-moz-document url(about:home), url(about:newtab), url(about:privatebrowsing) {
-        body,
-        .App {
-            background-color: #00000070 !important;
-        }
+@-moz-document url(about:config), url(about:support){
+  html, #toolbar{
+    background-color: transparent !important;
+  }
+  tr, table{
+    background-color: transparent !important;
+    border: none !important;
+  }
+  tr{
+    outline: solid 1px #88888822 !important;
+  }
+}
+
+groupbox{
+/*   background: var(--zen-colors-tertiary) !important; */
+  background: var(--zen-colors-border-contrast) !important;
+  border: none;
+}
+
+@-moz-document url(about:home), url(about:newtab), url(about:privatebrowsing) {
+  body, .App{
+    background-color: #00000000 !important;
+  }
 
         .top-sites-list,
         .personalizeButtonWrapper {
             opacity: 0 !important;
             transition: opacity 0.3s ease-in-out;
 
-            &:hover {
-                opacity: 1 !important;
-            }
-        }
-
-        .App > div:nth-child(2),
-        .wallpaper {
-            display: none !important;
-        }
-
-        #sineInstallationGroup {
-            width: 60vw;
-            padding: 30px;
-        }
-
-        #sineInstallationList {
-            grid-template-columns: repeat(auto-fit, 290px) !important;
-            gap: 12px !important;
-            height: auto !important;
-            place-content: center !important;
-        }
+    &:hover{
+      opacity: 1 !important;
     }
+  }
+
+  .App > div:nth-child(2), .wallpaper{
+    display: none !important;
+  }
+
+    /*  no private hint  */
+  .info-border > .info{
+    display: none !important;
+  }
+
+/*  rounded search  */
+  #search-handoff-button{
+    border-radius: 2em !important;
+  }
+
+/*  no zen text  */
+  .wordmark{
+    display: none !important;
+  }
+
+    #sineInstallationGroup {
+        width: 60vw;
+        padding: 30px;
+    }
+
+    #sineInstallationList {
+        grid-template-columns: repeat(auto-fit, 290px) !important;
+        gap: 12px !important;
+        height: auto !important;
+        place-content: center !important;
+    }
+}
 
     @-moz-document url(addons.mozilla.org) {
         /* transparency */
@@ -131,6 +175,16 @@
             display: none !important;
         }
     }
+
+
+ /* transparency */
+/* .pdfViewer, body:has(.pdfViewer){
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+} */
+
 
     @-moz-document url(about:config) {
         tr,
