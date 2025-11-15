@@ -104,7 +104,7 @@
 
 @media (-moz-pref("arc-font", "SF-Symbols")) {
   :root {
-    --arc-font: "Rookery New Stacked", "Metropolis", "Google Sans 18pt";
+    --arc-font: "Metropolis", "Google Sans 18pt";
   }
 }
 
