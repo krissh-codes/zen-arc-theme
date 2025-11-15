@@ -190,8 +190,8 @@ tooltip {
 
 #reload-button:hover {
   transform: translateY(-2px) scale(1.1) rotate(15deg);
-  box-shadow: 0 5px 14px -4px rgba(30, 40, 80, 0.18);
-  animation: reloadPulse 1s ease-in-out infinite;
+  //box-shadow: 0 5px 14px -4px rgba(30, 40, 80, 0.18);
+  //animation: reloadPulse 1s ease-in-out infinite;
 }
 
 @keyframes reloadPulse {
