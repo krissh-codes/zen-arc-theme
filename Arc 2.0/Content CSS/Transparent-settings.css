@@ -1,11 +1,11 @@
 /*---------------------------------transparent zen windows lie setting about config etc--------------------------------------*/
 :root {
-    --zen-colors-tertiary: transparent !important;
-    --zen-settings-secondary-background: transparent !important;
+    //--zen-colors-tertiary: transparent !important;
+    //--zen-settings-secondary-background: transparent !important;
 }
 
 #preferences-root {
-    background-color: transparent !important;
+    //background-color: transparent !important;
     font-family: sans-serif !important;
 
     groupbox:not(#sineInstallationGroup:popover-open) {
@@ -56,7 +56,7 @@
 
 /* Removes the white or dark layer on top */
 browser {
-    background-color: transparent !important;
+    //background-color: transparent !important;
 }
 
 .sticky-container {
@@ -65,7 +65,7 @@ browser {
 }
 
 html:has([data-l10n-id]) {
-    background-color: transparent !important;
+    //background-color: transparent !important;
 }
 
 .KEYJUMP_hint {
