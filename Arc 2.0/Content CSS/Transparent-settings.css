@@ -96,6 +96,7 @@ groupbox {
     /*   background: var(--zen-colors-tertiary) !important; */
     background: var(--zen-colors-border-contrast) !important;
     border: none;
+    padding: 20px;
 }
 
 @-moz-document url(about:home), url(about:newtab), url(about:privatebrowsing) {
