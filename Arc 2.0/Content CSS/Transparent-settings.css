@@ -4,6 +4,10 @@
     //--zen-settings-secondary-background: transparent !important;
 }
 
+.dialogFrame {
+    background-color: var(--zen-colors-tertiary);
+}
+
 #preferences-root {
     //background-color: transparent !important;
     font-family: sans-serif !important;
