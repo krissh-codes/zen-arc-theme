@@ -44,7 +44,7 @@ Arc 2.0 has been tested on 1.16.1b on Windows. Also, this theme is preferred to 
 
 
   
-* To locate `Arc 2.0` folder for other configuration purpose with **Sine v2** or the theme itself, you need to go to go to `about:profiles`, scroll to the profile you have this theme in, then select `Open Folder` in the row of **Root Directory**; then go to `chrome > sine-mods > Arc-2.0`. Inside this folder all files and folders, including `CONFIG.css` are there for configurations deisred. <br>
+* To locate `Arc 2.0` folder for other configuration purpose with **Sine v2** or the theme itself, you need to go to go to `about:profiles`, scroll to the profile you have this theme in, then select `Open Folder` in the row of **Root Directory**; then go to `chrome > sine-mods > ZarK`. Inside this folder all files and folders, including `CONFIG.css` are there for configurations deisred. <br>
   **[ALERT: Edit `CONFIG.css` on path mentioned above inside `Arc 2.0` folder to edit prefs like compact sidebar width.]**
   ![image](https://github.com/user-attachments/assets/3b71cf3a-9650-4f26-ab09-204fb5355bb4)
   
