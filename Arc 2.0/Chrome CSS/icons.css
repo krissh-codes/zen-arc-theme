@@ -114,6 +114,10 @@
   }
 }
 
+:root {
+  --monospace-font-family: 'CommitMono Nerd Font', Menlo, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
 *:not(browser[primary="true"]):not(.devtools-monospace *):not(.properties-view *):not(.CodeMirror *):not(.eager-evaluation-result__text *):not(input):not(#inspector-breadcrumbs *):not(#preferences-root *) {
   font-family: var(--arc-font), sans-serif;
 }
@@ -124,12 +128,12 @@
 }
 
 #inspector-breadcrumbs *, .eager-evaluation-result__text *, .properties-view *, .stack-trace * {
-  font-family: var(--monospace-font-family), Menlo, monospace !important;
+  font-family: 'CommitMono Nerd Font', Menlo, monospace !important;
 }
 
 #devtools-webconsole, .debugger , .network-monitor, .inspector {
   input {
-    font-family: var(--monospace-font-family), Menlo, monospace !important;
+    font-family: 'CommitMono Nerd Font', Menlo, monospace !important;
   }
 }
 
