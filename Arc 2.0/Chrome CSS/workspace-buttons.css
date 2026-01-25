@@ -325,13 +325,8 @@ min-width: 26px !important;
 
   /* Option to remove workspace name */
   @media (-moz-pref("arc-remove-workspace-indicator")) {
-
-  .zen-current-workspace-indicator {
-    display: none !important;
-  }
-
-    #zen-tabs-wrapper {
-      padding-top: 4px; /* Add missing padding */
+    .zen-current-workspace-indicator {
+      display: none !important;
     }
   }
 }
