@@ -35,6 +35,10 @@
 */
   /* -------------------------- COMPACT SIDEBAR -------------------------- */
 
+  #tabbrowser-tabs, #TabsToolbar, #titlebar, #TabsToolbar-customization-target {
+    height: calc(100% + 1.5px) !important;
+  }
+
   /* Fix for twilight acrylic */
   #navigator-toolbox:not([animate='true']) #titlebar {
     position: relative;
