@@ -12,18 +12,18 @@
   /* main ui tint */
   #zen-main-app-wrapper {
     background: var(--nebula-ui-tint) !important;
-  } 
+  }
 
   /* Hide identity label for Bonjourr */
   #identity-icon-label[value="Extension (Bonjourr · Minimalist Startpage)"] {
     display: none !important;
   }
-  
+
   :root {
     --attention-dot-color: transparent !important; /* remove attention dot */
     --zen-themed-toolbar-bg-transparent: transparent !important; /* fix for transparency */
   }
-  
+
   /* Config for blur rendering */
   @media -moz-pref("arc.force-blur-rendering") {
     browser {
@@ -31,7 +31,7 @@
     }
   }
   /* --------------------- TABS: NO SHADOW --------------------- */
-  
+
   hbox.browserSidebarContainer, #zen-tabbox-wrapper {
     @media (-moz-pref("arc-tabs-no-shadow")) {
       box-shadow: none !important;
@@ -40,9 +40,9 @@
 
 
 /* NO-GAPS BY Comp-Tech-Guy From the mod No-Gaps */
-	
+
   /* ---------------------- NOGAPS MOD ------------------------ */
-  
+
   @media  -moz-pref("arc-marginless-mod", 2)  {
     /* No-Gap Remove code */
 	:root[zen-single-toolbar="true"] .browserSidebarContainer {
@@ -54,11 +54,11 @@
 		border-top-left-radius: 0.1px !important;
 		border-top-right-radius: 0.1px !important;
 	}
-	
+
 	:root[zen-right-side="true"]:not([zen-single-toolbar="true"]) .browserSidebarContainer{
 		border-top-left-radius: 0.1px !important;
 	}
-	
+
 	:root:not([zen-right-side="true"]):not([zen-single-toolbar="true"]) .browserSidebarContainer{
 		border-top-right-radius: 0.1px !important;
 	}
@@ -82,7 +82,7 @@
 			height: 34px !important;
 		}
 	}
-	
+
 	@media -moz-pref("zen.view.compact.hide-toolbar") {
 		:root[zen-compact-mode="true"]{
 			#zen-appcontent-navbar-wrapper {
@@ -93,7 +93,7 @@
 			#zen-appcontent-navbar-wrapper[zen-has-hover="true"] {
 				height: 38px !important;
 			}
-		}			
+		}
 	}
 
 	/* Tab Edits for split tab view */
@@ -130,9 +130,9 @@
 	}
 }
   }
-  
+
   /* ----------------- NOGAPS COMPACT MOD ----------------- */
-  
+
   @media -moz-pref("arc-marginless-mod", 1) {
     /* Remove height from the topbar in just singlular toolbar */
 	:root[zen-single-toolbar="true"][zen-compact-mode="true"]:not([customizing]) {
@@ -202,19 +202,20 @@
 		}
 	}
   }
-  
+
   /* ------------------- FLOATING STATUSBAR ------------------- */
   #statuspanel {
     margin: 10px !important;
     min-width: 10px !important;
   }
-  
+
   #statuspanel-label {
     border-radius: 11px !important;
     font-weight: normal;
     padding: 3px 10px !important;
     border: 1px solid var(--zen-colors-border) !important;
-    background: light-dark(rgba(255, 255, 255, 1), rgba(0, 0, 0, 0.9)) !important;
+    background: var(--zen-colors-tertiary) !important;
+  	color: var(--text-color) !important;
   }
 }
 
@@ -233,7 +234,7 @@
     mask-repeat: no-repeat;
     mask-size: 100% 100%;
   }
-  
+
   .zen-glance-overlay > vbox {
     background-color: light-dark(#fff7, #0007) !important;
     margin-top: 0.5% !important;
@@ -243,7 +244,7 @@
   }
 }
 
-/* -------Removes scrollbar in tab panel and also adds fade effect -------- */ 
+/* -------Removes scrollbar in tab panel and also adds fade effect -------- */
 @media not (-moz-pref("arc-urlbar-fade-in")){
     #zen-tabs-wrapper {
         mask-image: linear-gradient(to bottom, transparent, black 20px, black calc(100% - 20px), transparent 100%) !important;
@@ -275,7 +276,7 @@
   #customization-container {
     left: 10px;
   }
- 
+
   #customization-container #customization-content-container {
     flex-direction: row-reverse;
   }
