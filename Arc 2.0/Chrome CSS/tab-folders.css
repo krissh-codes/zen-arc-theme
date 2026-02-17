@@ -8,14 +8,19 @@
   transition: background-color 0.3s ease, box-shadow 0.3s ease !important;
 }
 
-/* Override for pinned tabs background */
-@media (-moz-pref("arc-folder-border")) {
+/* Advanced Tab Groups Outline show up fixed */
+.tab-group-label{
+  outline:none !important;
+}
+
+/* Override for pinned tabs background 
+@media (-moz-pref("arc-folder-background")) {
   .tab-group-label-container::before {
     background-color: transparent !important;
     box-shadow: 0 0px 3px transparent !important;
   }
 }
-
+*/
 /* Hover effect 
 .tab-group-label-container:hover::before {
   background-color: var(--nebula-color-hover) !important;
@@ -23,7 +28,7 @@
 }
 */
 /* Nebula's folder styling (Background and vertical bar) */
-@media (-moz-pref("arc-folder-border")) {
+@media (-moz-pref("arc-folder-background")) {
   
   /* ------------------- Vertical Bar for Tab Group ------------------- */
 

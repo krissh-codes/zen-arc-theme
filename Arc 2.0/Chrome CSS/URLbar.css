@@ -14,7 +14,7 @@
 /* Center text in URL bar */
 #urlbar .urlbar-input,
 .urlbar-input-container {
-    position: relative;
+  position: relative;
 }
 
 /* New Animations */
@@ -57,9 +57,10 @@
 
 /* Smooth dropdown appearance */
 #urlbar-results {
-    animation: fadeIn 0.2s ease;
-    /* background: rgba(0, 0, 0, 0.9); */
-    border-radius: 8px;
+  animation: fadeIn 0.2s ease;
+  /* background: rgba(0, 0, 0, 0.9); */
+  border-radius: 8px;
+  /* border: 1px solid rgba(255, 255, 255, 0.1); */
 }
 
 @keyframes fadeIn {
@@ -87,12 +88,12 @@
 }
 
 /* Accessibility - disable for reduced motion */
-@media (prefers-reduced-motion: reduce) {
+/* @media (prefers-reduced-motion: reduce) {
   * {
     animation: none !important;
     transition: none !important;
   }
-}
+} */
 
 /* ------------------ URLBAR Styling ------------------ */
 :root[zen-single-toolbar="true"] #urlbar {
@@ -330,7 +331,7 @@
 .urlbarView-row {
   &:not([type="tip"], [type="dynamic"]) {
     :root:not([uidensity="compact"]) & {
-      min-height: 12px !important;
+      min-height: 50px !important;
     }
   }
 }
