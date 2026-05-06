@@ -2,6 +2,10 @@
 :root {
     /*--zen-colors-tertiary: transparent !important;*/
     /*--zen-settings-secondary-background: transparent !important;*/
+
+    --background-color-canvas: var(--zen-colors-border-contrast) !important;
+    --background-color-box: var(--zen-colors-border-contrast) !important;
+    --card-padding: 1.4rem;
 }
 
 .dialogFrame {
@@ -26,10 +30,15 @@
 
     .navigation {
         background: rgba(0, 0, 0, .1) !important;
+        padding: 3rem 1rem !important;
     }
 
     #searchInput {
         width: 100% !important;
+    }
+
+    #categories > .category {
+        border-radius: 1rem !important;
     }
 
     .category[selected="true"], .category[selected] {
@@ -61,6 +70,8 @@
 .sticky-container {
     width: calc(var(--page-main-content-width) + var(--main-margin-start) + var(--main-margin-start)) !important;
     border-radius: 0 0 1em 1em !important;
+    margin-bottom: 2rem;
+    padding: 0 var(--card-padding) !important;
 }
 
 .KEYJUMP_hint {
