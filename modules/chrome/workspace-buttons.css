@@ -49,14 +49,6 @@
     background-color 0.35s ease-out;
 }
 
-#zen-workspaces-button:hover {
-  box-shadow: 0 2px 12px rgb(255 255 255 / 16%) !important;
-  background-color: light-dark(
-    rgb(25 25 25 / 20%),
-    rgb(255 255 255 / 15%)
-  ) !important;
-}
-
 /* Default subview button styling */
 #zen-workspaces-button .subviewbutton {
   border-radius: calc(var(--arc-border-radius, 12px) - 4.5px) !important;
@@ -77,13 +69,8 @@
 }
 
 #zen-workspaces-button .subviewbutton:hover {
-  background-color: light-dark(
-    rgb(0 0 0 / 12.5%),
-    rgb(0 0 0 / 12.5%)
-  ) !important;
   filter: grayscale(0%) !important;
   opacity: 0.9 !important;
-  box-shadow: 0 0 4px light-dark(rgb(0 0 0 / 25%), rgb(255 255 255 / 25%)) !important;
 }
 
 #zen-workspaces-button .subviewbutton:hover > img,
@@ -102,11 +89,6 @@
 }
 
 #zen-workspaces-button .subviewbutton[active] {
-  background-color: light-dark(
-    rgb(0 0 0 / 12.5%),
-    rgb(255 255 255 / 10%)
-  ) !important;
-  box-shadow: 0 0 4px light-dark(rgb(0 0 0 / 50%), rgb(255 255 255 / 50%)) !important;
   overflow: hidden !important;
   position: relative;
   filter: grayscale(0%) !important;
@@ -127,11 +109,6 @@
     background-color: transparent !important;
     box-shadow: 0 2px 12px rgba(255,255,255,0) !important;
     transition: box-shadow 0.35s ease-out, background-color 0.35s ease-out;
-  }
-
-  #zen-workspaces-button:hover {
-    box-shadow: 0 2px 12px rgba(255,255,255,0) !important;
-    background-color: transparent !important;
   }
 
   /* Style 0 button styling - resets and custom styles */
@@ -241,11 +218,6 @@
     background-color: light-dark(rgba(25,25,25,0.2), rgba(255,255,255,0.08)) !important;
     box-shadow: 0 2px 12px rgba(255,255,255,0.08) !important;
     transition: box-shadow 0.35s ease-out, background-color 0.35s ease-out;
-  }
-
-  #zen-workspaces-button:hover {
-    box-shadow: 0 2px 12px rgba(255,255,255,0.16) !important;
-    background-color: light-dark(rgba(25,25,25,0.3), rgba(255,255,255,0.08)) !important;
   }
 
   /* Style 2 button styling - resets and custom styles */
