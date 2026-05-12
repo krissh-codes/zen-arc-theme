@@ -525,58 +525,63 @@ scrollbox {
 
   findbar {
     position: fixed !important;
-    top: var(--arc-findbar-vertical, 50px) !important;
-    right: var(--arc-findbar-horizontal, 25px) !important;
-    height: var(--arc-findbar-breadth, 50px) !important;
-    /* z-index: 1000 !important; */
-    min-width: var(--arc-findbar-length, 850px) !important;
+    top: 30px !important;
+    right: 30px !important;
+    z-index: 1000 !important;
+    min-width: 600px !important;
     display: flex !important;
     align-items: center !important;
-    gap: 0 !important;
-    padding: 10px !important;
-    background: var(
-      --arc-findbar-bg,
-      light-dark(rgb(255 255 255 / 25%), rgb(0 0 0 / 25%))
-    ) !important;
-    backdrop-filter: blur(var(--arc-findbar-blur, 25px))
-      saturate(var(--arc-findbar-saturate, 1))
-      contrast(var(--arc-findbar-contrast, 1)) !important;
-    border-radius: var(--arc-border-radius, 12px) !important;
-    box-shadow: 0 4px 14px rgb(0 0 0 / 60%) !important;
-    /* Useless? */
-    /* will-change: transform, opacity; */
+    gap: 6px !important;
+    padding: 6px 10px !important;
+    background: light-dark(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.4)) !important;
+    backdrop-filter: blur(32px) saturate(140%) !important;
+    border-radius: 13px !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6) !important;
+    will-change: transform, opacity;
     border-top: 0 !important;
   }
 
-  /* #zen-tabbox-wrapper::before {
+  .findbar-container {
+    display: flex !important;
+    height: auto !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    min-height: min-content !important;
+    gap: 6px !important;
+  }
+
+  .findbar-container > hbox:first-of-type {
+    flex-basis: 100% !important;
+  }
+
+  #zen-tabbox-wrapper::before {
     position: absolute !important;
     z-index: 0 !important;
     content: "" !important;
     background-color: light-dark(rgba(255, 255, 255, 1), rgba(40, 40, 40, 1)) !important;
     opacity: 0;
-    width: 89%;
     filter: blur(0.1px) !important;
-    top: 30px !important;
+    top: 29px !important;
+    min-width: 600px;
     right: 30px;
     height: 43px !important;
     bottom: auto !important;
-    border-radius: calc(var(--arc-border-radius, 12px) + 1px);
+    border-radius: 13px;
     visibility: visible !important;
     transition: opacity 0.2s ease, width 0.5s ease !important;
   }
-  
+
   :has(.browserSidebarContainer.deck-selected > .browserContainer > findbar:not([hidden])) #zen-tabbox-wrapper::before {
     opacity: 1 !important;
-    width: 71.5%;
+    min-width: 600px;
   }
-  
+
   :has(.browserSidebarContainer.deck-selected > .browserContainer > findbar[hidden]) #zen-tabbox-wrapper::before {
     opacity: 0 !important;
     width: 71.5%;
   }
-*/
 
-  findbar:not[hidden] {
+  findbar:not([hidden]) {
     visibility: visible !important;
     animation: findbar-show-animation 0.3s ease-out forwards !important;
   }
@@ -586,10 +591,7 @@ scrollbox {
     transform: scale(0.95) !important;
     pointer-events: none !important;
     visibility: hidden !important;
-    transition:
-      opacity 0.2s ease,
-      transform 0.2s ease,
-      visibility 0s linear 0.2s !important;
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0s linear 0.2s !important;
   }
 
   .findbar-textbox {
@@ -599,30 +601,28 @@ scrollbox {
     color: inherit !important;
     border: none !important;
     outline: none !important;
-    font-size: 13px !important;
+    font-size: 14px !important;
     padding: 4px 10px !important;
     box-shadow: none !important;
   }
 
   findbar toolbarbutton {
-    background: light-dark(rgb(255 255 255 / 25%), rgb(0 0 0 / 25%)) !important;
-    border-radius: 8px !important;
-    transition:
-      background 0.2s ease,
-      transform 0.1s ease-out !important;
+    background: light-dark(rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.15)) !important;
+    border-radius: 6.5px !important;
+    transition: background 0.2s ease, transform 0.1s ease-out !important;
   }
 
   findbar .findbar-find-previous,
   findbar .findbar-find-next {
     align-self: center;
     width: 20px !important;
-    height: 21px !important;
+    height: 20px !important;
     padding: 2px !important;
     font-size: 10px !important;
   }
 
   .findbar-find-previous {
-    margin-right: 5px !important;
+    margin-right: 4px !important;
   }
 
   findbar .findbar-close {
@@ -634,12 +634,12 @@ scrollbox {
   }
 
   findbar toolbarbutton:hover {
-    background: light-dark(rgb(255 255 255 / 50%), rgb(0 0 0 / 50%)) !important;
+    background: light-dark(rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.6)) !important;
     transform: scale(1.05) !important;
   }
 
   findbar toolbarbutton:active {
-    transform: scale(0.9) !important;
+    transform: scale(0.92) !important;
   }
 }
 
